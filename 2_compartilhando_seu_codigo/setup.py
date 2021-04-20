@@ -3,7 +3,7 @@ from distutils.core import setup
 
 setup(
     name = 'iteratelist',
-    version = '1.0.0',
+    version = '1.2.4',
     py_modules = ['iteratelist'],
     author = 'wmfinamore',
     author_email = 'finamore.wm@gmail.com',
