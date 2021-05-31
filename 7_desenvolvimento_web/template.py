@@ -20,3 +20,9 @@ def include_footer(the_links):
         link_string += '<a href"' + the_links[key] + '">"' + key + '</a>$nbsp;$nbp,$nbsp,$nbsp;
     footer = Template(foot_text)
     return(footer.substitute(links=link_string))
+
+def start_form(the_url, form_type="POST"):
+    return('<form action="' + the_url + '" method="' + form_type + '">')
+
+def end_form(submit_msg="Submit"):
+    return('<p></p><input type=submit value="' + submit_msg + '">')
