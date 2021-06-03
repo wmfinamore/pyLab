@@ -13,7 +13,7 @@ def include_header(the_title):
 
 
 def include_footer(the_links):
-    with open('template/footer.html') as footf:
+    with open('template/footer.html', 'wr') as footf:
         foot_text = footf.read()
     link_string = ''
     for key in the_links:
